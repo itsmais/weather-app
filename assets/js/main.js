@@ -18,7 +18,7 @@ function getWeather() {
             };
 
             let url = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + long + "&appid=6abdc02a8c5609bade1268cceec08c45";
-            console.log(url);
+            // console.log(url);
             fetch(url, requestOptions)
                 .then(response => response.text())
                 .then(result => {
