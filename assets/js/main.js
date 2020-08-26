@@ -28,7 +28,7 @@ function getWeather() {
                     let temp = convertToCelsius(jsonObj["main"]["temp"]);
                     let locationName = jsonObj["name"];
                     weatherResult.innerHTML +=
-                        "it is " + weatherDescription +
+                         weatherDescription +
                         " </br> in " + locationName +
                         "</br>" + temp + "\xB0 C";
                     weahterIcon.src = "https://openweathermap.org/img/wn/" + jsonObj["weather"][0]["icon"] + "@2x.png";
